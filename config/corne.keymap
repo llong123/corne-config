@@ -154,10 +154,10 @@
 
             display-name = "Lower";
             bindings = <
-&trans     &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &trans
-&trans     &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
-&kp LCTRL  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans     &trans  &trans
-                           &trans  &trans  &trans    &trans    &trans    &trans
+&kp LESS_THAN  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6    &kp N7    &kp N8  &kp N9     &kp N0    &kp MINUS
+&trans         &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &kp PLUS  &trans
+&kp LCTRL      &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans     &trans    &trans
+                               &trans  &trans  &trans    &trans    &trans    &trans
             >;
         };
 
@@ -170,20 +170,20 @@
 
             display-name = "Raise WIN";
             bindings = <
-&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR     &kp RPAR  &trans
-&trans  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &Lsqr_WIN        &Rsqr_WIN    &kp BSLH  &kp GRAVE
-&trans  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &Lcurly_WIN      &Rcurly_WIN  &kp PIPE  &kp TILDE
-                          &trans    &trans    &trans       &trans     &trans     &trans
+&kp LS(GT)  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)    &kp LS(NUMBER_6)  &kp LS(N7)  &kp LS(N8)   &kp LS(N9)   &kp LS(N0)  &kp LS(QMARK)
+&trans      &kp RA(NUMBER_1)  &kp RA(NUMBER_2)  &kp RA(NUMBER_3)  &kp RA(NUMBER_4)  &kp RA(N5)    &kp RA(NUMBER_6)  &kp RA(N7)  &kp RA(N8)   &kp RA(N9)   &kp RA(N0)  &kp BSLH
+&trans      &trans            &trans            &trans            &trans            &trans        &kp UNDER         &kp PLUS    &Lcurly_WIN  &Rcurly_WIN  &kp PIPE    &kp TILDE
+                                                &trans            &trans            &trans        &trans            &trans      &trans
             >;
         };
 
         raise_macOS {
             display-name = "Raise MacOS";
             bindings = <
-&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR     &kp RPAR  &trans
-&trans  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &Lsqr_MacOS      &Rsqr_Mac    &kp BSLH  &kp GRAVE
-&trans  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &Lcurly_Mac      &Rcurly_Mac  &kp PIPE  &kp TILDE
-                          &trans    &trans    &trans       &trans     &trans     &trans
+&kp LS(GT)  &kp LS(NUMBER_1)      &kp LS(NUMBER_2)      &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &kp LS(N7)      &kp LS(N8)      &kp LS(N9)      &kp LS(N0)      &kp LS(QUESTION)
+&trans      &kp RA(NUMBER_1)      &kp RA(NUMBER_2)      &kp RA(NUMBER_3)  &kp RA(NUMBER_4)  &kp RA(N5)        &kp RA(NUMBER_6)  &kp RA(N7)      &kp RA(N8)      &kp RA(N9)      &kp RA(N0)      &kp EQUAL
+&trans      &kp RA(RS(NUMBER_1))  &kp RS(RA(NUMBER_2))  &kp RS(RA(N3))    &kp RA(RS(N4))    &kp RA(RS(N5))    &kp RA(RS(N6))    &kp RS(RA(N7))  &kp RA(RS(N8))  &kp RA(RS(N9))  &kp RA(RS(N0))  &kp TILDE
+                                                        &trans            &trans            &trans            &trans            &trans          &trans
             >;
         };
 
