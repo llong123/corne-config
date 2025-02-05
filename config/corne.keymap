@@ -122,10 +122,10 @@
         MacOS {
             display-name = "MACOS";
             bindings = <
-&bspc_del  &kp Q          &kp W          &kp E         &kp R         &kp T        &kp Y    &kp U         &kp I         &kp O          &kp P             &bspc_del
-&kp TAB    &HRML LSHFT A  &HRML LCTRL S  &HRML LALT D  &HRML LGUI F  &kp G        &kp H    &HRMR RGUI J  &HRMR RALT K  &HRMR RCTRL L  &HRMR RSHFT SEMI  &kp SQT
-&kp LSHFT  &kp Z          &kp X          &kp C         &kp V         &kp B        &kp N    &kp M         &kp COMMA     &kp DOT        &kp FSLH          &kp ESC
-                                         &kp LGUI      &mo 2         &kp SPACE    &kp RET  &mo 4         &kp RALT
+&kp TAB     &kp Q          &kp W          &kp E         &kp R         &kp T        &kp Y    &kp U         &kp I         &kp O          &kp P             &bspc_del
+&kp LSHIFT  &HRML LSHFT A  &HRML LCTRL S  &HRML LALT D  &HRML LGUI F  &kp G        &kp H    &HRMR RGUI J  &HRMR RALT K  &HRMR RCTRL L  &HRMR RSHFT SEMI  &kp SQT
+&bspc_del   &kp Z          &kp X          &kp C         &kp V         &kp B        &kp N    &kp M         &kp COMMA     &kp DOT        &kp FSLH          &kp ESC
+                                          &kp LGUI      &mo 2         &kp SPACE    &kp RET  &mo 4         &kp RALT
             >;
         };
 
@@ -138,9 +138,9 @@
 
             display-name = "WINDOWS";
             bindings = <
-&bspc_del  &kp Q          &kp W          &kp E         &kp R         &kp T        &kp Y    &kp U         &kp I         &kp O          &kp P             &bspc_del
-&kp TAB    &HRML LSHFT A  &HRML LCTRL S  &HRML LALT D  &HRML LGUI F  &kp G        &kp H    &HRMR RGUI J  &HRMR RALT K  &HRMR RCTRL L  &HRMR RSHFT SEMI  &kp SQT
-&kp LSHFT  &kp Z          &kp X          &kp C         &kp V         &kp B        &kp N    &kp M         &kp COMMA     &kp DOT        &kp FSLH          &kp ESC
+&kp TAB    &kp Q          &kp W          &kp E         &kp R         &kp T        &kp Y    &kp U         &kp I         &kp O          &kp P             &bspc_del
+&kp LSHFT  &HRML LSHFT A  &HRML LCTRL S  &HRML LALT D  &HRML LGUI F  &kp G        &kp H    &HRMR RGUI J  &HRMR RALT K  &HRMR RCTRL L  &HRMR RSHFT SEMI  &kp SQT
+&bspc_del  &kp Z          &kp X          &kp C         &kp V         &kp B        &kp N    &kp M         &kp COMMA     &kp DOT        &kp FSLH          &kp ESC
                                          &kp LGUI      &mo 2         &kp SPACE    &kp RET  &mo 3         &kp RALT
             >;
         };
@@ -154,10 +154,10 @@
 
             display-name = "Lower";
             bindings = <
-&trans      &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &trans
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
-&trans      &trans        &trans        &trans        &trans        &trans          &trans    &trans    &trans  &trans     &trans  &trans
-                                        &trans        &trans        &kp SPACE       &kp RET   &trans    &trans
+&trans     &kp N1  &kp N2  &kp N3  &kp N4  &kp N5       &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &trans
+&trans     &trans  &trans  &trans  &trans  &trans       &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
+&kp LCTRL  &trans  &trans  &trans  &trans  &trans       &trans    &trans    &trans  &trans     &trans  &trans
+                           &trans  &trans  &kp SPACE    &kp RET   &trans    &trans
             >;
         };
 
@@ -189,10 +189,10 @@
 
         tri_layer {
             bindings = <
-&none        &none  &none  &to 1   &none   &none     &none   &none   &to 0   &none  &none  &none
-&none        &none  &none  &none   &none   &none     &none   &none   &none   &none  &none  &none
-&bootloader  &none  &none  &none   &none   &none     &none   &none   &none   &none  &none  &bootloader
-                           &trans  &trans  &trans    &trans  &trans  &trans
+&none        &none         &none         &to 0         &none         &to 1           &to 1   &none   &to 0   &none  &none  &none
+&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none   &none   &none   &none  &none  &none
+&bootloader  &none         &none         &none         &none         &none           &none   &none   &none   &none  &none  &bootloader
+                                         &trans        &trans        &trans          &trans  &trans  &trans
             >;
 
             label = "Tri_Layer";
