@@ -12,9 +12,14 @@
     combos {
         compatible = "zmk,combos";
 
-        f_layer {
+        f_layer_l {
             bindings = <&mo 6>;
             key-positions = <37 38>;
+        };
+
+        f_layer_r {
+            bindings = <&mo 6>;
+            key-positions = <39 40>;
         };
     };
 
