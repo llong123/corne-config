@@ -61,14 +61,14 @@
             label = "RSQUARE_WIN";
         };
 
-        Rsqr_Mac: Lsqr_Mac {
+        Rsqr_Mac: Rsqr_Mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp RA(N9)>;
-            label = "LSQR_MAC";
+            label = "RSQR_MAC";
         };
 
-        Lsqr_Mac: Lsqr_Mac {
+        Lsqr_MacOS: Lsqr_Mac {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp RA(N8)>;
@@ -176,7 +176,7 @@
             display-name = "Raise MacOS";
             bindings = <
 &trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR     &kp RPAR  &trans
-&trans  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &Lsqr_Mac        &Rsqr_Mac    &kp BSLH  &kp GRAVE
+&trans  &trans    &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &Lsqr_MacOS      &Rsqr_Mac    &kp BSLH  &kp GRAVE
 &trans  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &Lcurly_Mac      &Rcurly_Mac  &kp PIPE  &kp TILDE
                           &trans    &trans    &kp SPACE    &kp RET    &trans     &trans
             >;
