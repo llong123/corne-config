@@ -63,6 +63,13 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             keep-mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        mod_dance: mod_dance {
+            compatible = "zmk,behavior-tap-dance";
+            label = "MOD_DANCE";
+            #binding-cells = <0>;
+            bindings = <&kp LGUI>, <&kp LCTRL>;
+        };
     };
 
     keymap {
@@ -74,7 +81,7 @@
 &kp TAB     &kp Q          &kp W          &kp E         &kp R         &kp T    &kp Y  &kp U         &kp I         &kp O          &kp P             &bspc_del
 &kp LSHIFT  &HRML LSHFT A  &HRML LCTRL S  &HRML LALT D  &HRML LGUI F  &kp G    &kp H  &HRMR RGUI J  &HRMR RALT K  &HRMR RCTRL L  &HRMR RSHFT SEMI  &kp SQT
 &bspc_del   &kp Z          &kp X          &kp C         &kp V         &kp B    &kp N  &kp M         &kp COMMA     &kp DOT        &kp FSLH          &kp ESC
-                                          &kp LGUI      &kp SPACE     &mo 1    &mo 2  &kp ENTER     &kp RALT
+                                          &mod_dance    &kp SPACE     &mo 1    &mo 2  &kp ENTER     &kp RALT
             >;
         };
 
