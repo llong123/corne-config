@@ -13,12 +13,12 @@
         compatible = "zmk,combos";
 
         f_layer_l {
-            bindings = <&mo 6>;
+            bindings = <&mo 4>;
             key-positions = <37 38>;
         };
 
         f_layer_r {
-            bindings = <&mo 6>;
+            bindings = <&mo 4>;
             key-positions = <39 40>;
         };
     };
@@ -112,7 +112,8 @@
             bindings = <&kp BACKSPACE>, <&kp DEL>;
 
             #binding-cells = <0>;
-            mods = <(MOD_RGUI|MOD_LCTL|MOD_LSFT|MOD_LALT|MOD_LGUI|MOD_RSFT|MOD_RCTL|MOD_RALT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
 
@@ -125,23 +126,7 @@
 &kp TAB     &kp Q          &kp W          &kp E         &kp R         &kp T    &kp Y  &kp U         &kp I         &kp O          &kp P             &bspc_del
 &kp LSHIFT  &HRML LSHFT A  &HRML LCTRL S  &HRML LALT D  &HRML LGUI F  &kp G    &kp H  &HRMR RGUI J  &HRMR RALT K  &HRMR RCTRL L  &HRMR RSHFT SEMI  &kp SQT
 &bspc_del   &kp Z          &kp X          &kp C         &kp V         &kp B    &kp N  &kp M         &kp COMMA     &kp DOT        &kp FSLH          &kp ESC
-                                          &kp LGUI      &kp SPACE     &mo 2    &mo 4  &kp ENTER     &kp RALT
-            >;
-        };
-
-        Windows {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
-
-            display-name = "WINDOWS";
-            bindings = <
-&kp TAB    &kp Q          &kp W          &kp E         &kp R         &kp T    &kp Y  &kp U         &kp I         &kp O          &kp P             &bspc_del
-&kp LSHFT  &HRML LSHFT A  &HRML LCTRL S  &HRML LALT D  &HRML LGUI F  &kp G    &kp H  &HRMR RGUI J  &HRMR RALT K  &HRMR RCTRL L  &HRMR RSHFT SEMI  &kp SQT
-&bspc_del  &kp Z          &kp X          &kp C         &kp V         &kp B    &kp N  &kp M         &kp COMMA     &kp DOT        &kp FSLH          &kp ESC
-                                         &kp LGUI      &kp SPACE     &mo 2    &mo 3  &kp ENTER     &kp RALT
+                                          &kp LGUI      &kp SPACE     &mo 1    &mo 2  &kp ENTER     &kp RALT
             >;
         };
 
@@ -161,22 +146,6 @@
             >;
         };
 
-        raise_WIN {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
-            display-name = "Raise WIN";
-            bindings = <
-&kp LS(GT)  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)    &kp LS(NUMBER_6)  &kp LS(N7)  &kp LS(N8)   &kp LS(N9)   &kp LS(N0)  &kp LS(QMARK)
-&trans      &kp RA(NUMBER_1)  &kp RA(NUMBER_2)  &kp RA(NUMBER_3)  &kp RA(NUMBER_4)  &kp RA(N5)    &kp RA(NUMBER_6)  &kp RA(N7)  &kp RA(N8)   &kp RA(N9)   &kp RA(N0)  &kp BSLH
-&trans      &trans            &trans            &trans            &trans            &trans        &kp UNDER         &kp PLUS    &Lcurly_WIN  &Rcurly_WIN  &kp PIPE    &kp TILDE
-                                                &trans            &trans            &trans        &trans            &trans      &trans
-            >;
-        };
-
         raise_macOS {
             display-name = "Raise MacOS";
             bindings = <
@@ -189,9 +158,9 @@
 
         tri_layer {
             bindings = <
-&none        &none         &none         &to 0         &none         &to 1           &to 1   &none   &to 0   &none  &none  &none
-&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none   &none   &none   &none  &none  &none
-&bootloader  &none         &none         &none         &none         &none           &none   &none   &none   &none  &none  &bootloader
+&bootloader  &none         &none         &bt BT_CLR    &none         &trans          &trans  &none   &none   &none  &none  &bootloader
+&none        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none   &none   &none   &none  &none  &none
+&none        &none         &none         &none         &none         &none           &none   &none   &none   &none  &none  &none
                                          &trans        &trans        &trans          &trans  &trans  &trans
             >;
 
@@ -213,14 +182,9 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
-        tri_WIN {
-            if-layers = <2 3>;
-            then-layer = <5>;
-        };
-
         tri_MAC {
-            if-layers = <2 4>;
-            then-layer = <5>;
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
