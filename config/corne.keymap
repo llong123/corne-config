@@ -15,69 +15,13 @@
         f_layer_l {
             bindings = <&mo 4>;
             key-positions = <37 38>;
+            layers = <0>;
         };
 
         f_layer_r {
             bindings = <&mo 4>;
             key-positions = <39 40>;
-        };
-    };
-
-    macros {
-        Lcurly_WIN: Lcurly_WIN {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RA(N7)>;
-            label = "LCURLY_WIN";
-        };
-
-        Rcurly_WIN: Rcurly_WIN {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RA(N0)>;
-            label = "RCURLY_WIN";
-        };
-
-        Lcurly_Mac: Lcurly_Mac {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RA(RS(N8))>;
-            label = "LCURLY_MAC";
-        };
-
-        Rcurly_Mac: Rcurly_Mac {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RS(RA(N9))>;
-            label = "RCURLY_MAC";
-        };
-
-        Lsqr_WIN: Lsqr_WIN {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RA(N8)>;
-            label = "LSQR_WIN";
-        };
-
-        Rsqr_WIN: Rsquare_WIN {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RA(N9)>;
-            label = "RSQUARE_WIN";
-        };
-
-        Rsqr_Mac: Rsqr_Mac {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RA(N9)>;
-            label = "RSQR_MAC";
-        };
-
-        Lsqr_MacOS: Lsqr_Mac {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RA(N8)>;
-            label = "LSQR_MAC";
+            layers = <0>;
         };
     };
 
@@ -149,10 +93,10 @@
         raise_macOS {
             display-name = "Raise MacOS";
             bindings = <
-&kp LS(GT)  &kp LS(NUMBER_1)      &kp LS(NUMBER_2)      &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &kp LS(N7)      &kp LS(N8)      &kp LS(N9)      &kp LS(N0)      &kp LS(QUESTION)
-&trans      &kp RA(NUMBER_1)      &kp RA(NUMBER_2)      &kp RA(NUMBER_3)  &kp RA(NUMBER_4)  &kp RA(N5)        &kp RA(NUMBER_6)  &kp RA(N7)      &kp RA(N8)      &kp RA(N9)      &kp RA(N0)      &kp EQUAL
-&trans      &kp RA(RS(NUMBER_1))  &kp RS(RA(NUMBER_2))  &kp RS(RA(N3))    &kp RA(RS(N4))    &kp RA(RS(N5))    &kp RA(RS(N6))    &kp RS(RA(N7))  &kp RA(RS(N8))  &kp RA(RS(N9))  &kp RA(RS(N0))  &kp TILDE
-                                                        &trans            &trans            &trans            &trans            &trans          &trans
+&kp LS(GT)     &kp LS(NUMBER_1)      &kp LS(NUMBER_2)      &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &kp LS(N7)      &kp LS(N8)      &kp LS(N9)      &kp LS(N0)      &kp LS(QUESTION)
+&kp RS(TILDE)  &kp RA(NUMBER_1)      &kp RA(NUMBER_2)      &kp RA(NUMBER_3)  &kp RA(NUMBER_4)  &kp RA(N5)        &kp RA(NUMBER_6)  &kp RA(N7)      &kp RA(N8)      &kp RA(N9)      &kp RA(N0)      &kp EQUAL
+&kp TILDE      &kp RA(RS(NUMBER_1))  &kp RS(RA(NUMBER_2))  &kp RS(RA(N3))    &kp RA(RS(N4))    &kp RA(RS(N5))    &kp RA(RS(N6))    &kp RS(RA(N7))  &kp RA(RS(N8))  &kp RA(RS(N9))  &kp RA(RS(N0))  &kp TILDE
+                                                           &trans            &trans            &trans            &trans            &trans          &trans
             >;
         };
 
