@@ -78,10 +78,10 @@
         MacOS {
             display-name = "MACOS";
             bindings = <
-&kp TAB     &kp Q          &kp W          &kp E         &kp R         &kp T    &kp Y  &kp U         &kp I         &kp O          &kp P             &bspc_del
-&kp LSHIFT  &HRML LSHFT A  &HRML LCTRL S  &HRML LALT D  &HRML LGUI F  &kp G    &kp H  &HRMR RGUI J  &HRMR RALT K  &HRMR RCTRL L  &HRMR RSHFT SEMI  &kp SQT
-&bspc_del   &kp Z          &kp X          &kp C         &kp V         &kp B    &kp N  &kp M         &kp COMMA     &kp DOT        &kp FSLH          &kp ESC
-                                          &mod_dance    &kp SPACE     &mo 1    &mo 2  &kp ENTER     &kp RALT
+&kp TAB     &kp Q  &kp W  &kp E       &kp R      &kp T    &kp Y  &kp U      &kp I      &kp O    &kp P             &bspc_del
+&kp LSHIFT  &kp A  &kp S  &kp D       &kp F      &kp G    &kp H  &kp J      &kp K      &kp L    &HRMR RSHFT SEMI  &kp SQT
+&bspc_del   &kp Z  &kp X  &kp C       &kp V      &kp B    &kp N  &kp M      &kp COMMA  &kp DOT  &kp FSLH          &kp ESC
+                          &mod_dance  &kp SPACE  &mo 1    &mo 2  &kp ENTER  &kp RALT
             >;
         };
 
