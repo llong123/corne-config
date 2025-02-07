@@ -15,12 +15,22 @@
         f_layer_l {
             bindings = <&mo 4>;
             key-positions = <37 38>;
-            layers = <0>;
         };
 
         f_layer_r {
             bindings = <&mo 4>;
             key-positions = <39 40>;
+        };
+
+        copy_mac {
+            bindings = <&kp LG(C)>;
+            key-positions = <26 27>;
+            layers = <0>;
+        };
+
+        paste_mac {
+            bindings = <&kp LG(V)>;
+            key-positions = <28 27>;
             layers = <0>;
         };
     };
