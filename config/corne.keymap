@@ -43,6 +43,16 @@
             bindings = <&kp LG(Z)>;
             key-positions = <25 26>;
         };
+
+        bcksp {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <8 7>;
+        };
+
+        del {
+            bindings = <&kp DEL>;
+            key-positions = <8 9>;
+        };
     };
 
     behaviors {
