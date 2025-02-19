@@ -156,10 +156,10 @@
 
         F_layer {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6    &kp F7              &kp F8        &kp F9            &kp F10        &kp F11  &kp F12
-&none   &none   &none   &none   &none   &none     &kp RC(LEFT_ARROW)  &kp RC(DOWN)  &kp RC(UP_ARROW)  &kp RC(RIGHT)  &none    &none
-&none   &none   &none   &none   &none   &none     &none               &none         &none             &none          &none    &none
-                        &none   &trans  &trans    &trans              &trans        &none
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6    &kp F7              &kp F8         &kp F9            &kp F10            &kp F11  &kp F12
+&none   &none   &none   &none   &none   &none     &kp RC(LEFT_ARROW)  &kp RC(DOWN)   &kp RC(UP_ARROW)  &kp RC(RIGHT)      &none    &none
+&none   &none   &none   &none   &none   &none     &kp LA(LG(LEFT))    &kp LA(LG(C))  &kp LA(LG(F))     &kp LA(LG(RIGHT))  &none    &none
+                        &none   &trans  &trans    &trans              &trans         &none
             >;
 
             label = "F-Layer";
