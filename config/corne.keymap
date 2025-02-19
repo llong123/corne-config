@@ -136,10 +136,10 @@
         raise_macOS {
             display-name = "Raise MacOS";
             bindings = <
-&kp LS(GT)     &kp LS(NUMBER_1)      &kp LS(NUMBER_2)      &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &kp LS(N7)      &kp LS(N8)      &kp LS(N9)      &kp LS(N0)      &kp LS(MINUS)
-&kp RS(TILDE)  &kp RA(NUMBER_1)      &kp RA(NUMBER_2)      &kp RA(NUMBER_3)  &kp RA(NUMBER_4)  &kp RA(N5)        &kp RA(NUMBER_6)  &kp RA(N7)      &kp RA(N8)      &kp RA(N9)      &kp RA(N0)      &kp RS(MINUS)
-&kp TILDE      &kp RA(RS(NUMBER_1))  &kp RS(RA(NUMBER_2))  &kp RS(RA(N3))    &kp RA(RS(N4))    &kp RA(RS(N5))    &kp RA(RS(N6))    &kp RS(RA(N7))  &kp RA(RS(N8))  &kp RA(RS(N9))  &kp RA(RS(N0))  &kp RS(RA(MINUS))
-                                                           &trans            &trans            &trans            &trans            &trans          &trans
+&kp LS(MINUS)      &kp LS(NUMBER_1)      &kp LS(NUMBER_2)      &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &kp LS(N7)      &kp LS(N8)      &kp LS(N9)      &kp LS(N0)      &kp LS(MINUS)
+&kp RA(TILDE)      &kp RA(NUMBER_1)      &kp RA(NUMBER_2)      &kp RA(NUMBER_3)  &kp RA(NUMBER_4)  &kp RA(N5)        &kp RA(NUMBER_6)  &kp RA(N7)      &kp RA(N8)      &kp RA(N9)      &kp RA(N0)      &kp RS(MINUS)
+&kp RA(RS(TILDE))  &kp RA(RS(NUMBER_1))  &kp RS(RA(NUMBER_2))  &kp RS(RA(N3))    &kp RA(RS(N4))    &kp RA(RS(N5))    &kp RA(RS(N6))    &kp RS(RA(N7))  &kp RA(RS(N8))  &kp RA(RS(N9))  &kp RA(RS(N0))  &kp RS(RA(MINUS))
+                                                               &trans            &trans            &trans            &trans            &trans          &trans
             >;
         };
 
