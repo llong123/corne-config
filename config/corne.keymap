@@ -91,6 +91,11 @@
             bindings = <&kp RIGHT_CONTROL>;
             key-positions = <22 34>;
         };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <19 20 21>;
+        };
     };
 
     behaviors {
@@ -136,9 +141,9 @@
 
             display-name = "Lower";
             bindings = <
-&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &kp MINUS
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &kp EQUAL
-&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans     &trans  &trans
+&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &kp MINUS
+&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans     &trans  &kp EQUAL
                         &trans  &trans  &trans    &trans    &trans    &trans
             >;
         };
@@ -146,10 +151,10 @@
         raise_macOS {
             display-name = "Raise MacOS";
             bindings = <
-&kp GRAVE          &kp LS(NUMBER_1)      &kp LS(NUMBER_2)      &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &kp LS(N7)      &kp LS(N8)      &kp LS(N9)      &kp LS(N0)      &kp LS(MINUS)
-&kp RA(GRAVE)      &kp RA(NUMBER_1)      &kp RA(NUMBER_2)      &kp RA(NUMBER_3)  &kp RA(NUMBER_4)  &kp RA(N5)        &kp RA(NUMBER_6)  &kp RA(N7)      &kp RA(N8)      &kp RA(N9)      &kp RA(N0)      &kp RA(MINUS)
-&kp RA(RS(GRAVE))  &kp RA(RS(NUMBER_1))  &kp RS(RA(NUMBER_2))  &kp RS(RA(N3))    &kp RA(RS(N4))    &kp RA(RS(N5))    &kp RA(RS(N6))    &kp RS(RA(N7))  &kp RA(RS(N8))  &kp RA(RS(N9))  &kp RA(RS(N0))  &kp RS(RA(MINUS))
-                                                               &trans            &trans            &trans            &trans            &trans          &trans
+&kp GRAVE      &kp LS(NUMBER_1)      &kp LS(NUMBER_2)      &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)  &kp LS(N7)      &kp LS(N8)      &kp LS(N9)      &kp LS(N0)      &kp LS(MINUS)
+&kp RA(GRAVE)  &kp RA(NUMBER_1)      &kp RA(NUMBER_2)      &kp RA(NUMBER_3)  &kp RA(NUMBER_4)  &kp RA(N5)        &kp RA(NUMBER_6)  &kp RA(N7)      &kp RA(N8)      &kp RA(N9)      &kp RA(N0)      &kp RA(MINUS)
+&trans         &kp RA(RS(NUMBER_1))  &kp RS(RA(NUMBER_2))  &kp RS(RA(N3))    &kp RA(RS(N4))    &kp RA(RS(N5))    &kp RA(RS(N6))    &kp RS(RA(N7))  &kp RA(RS(N8))  &kp RA(RS(N9))  &kp RA(RS(N0))  &kp RS(RA(MINUS))
+                                                           &trans            &trans            &trans            &trans            &trans          &trans
             >;
         };
 
@@ -169,7 +174,7 @@
 &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6    &kp F7              &kp F8         &kp F9            &kp F10            &kp F11  &kp F12
 &none   &none   &none   &none   &none   &none     &kp RC(LEFT_ARROW)  &kp RC(DOWN)   &kp RC(UP_ARROW)  &kp RC(RIGHT)      &none    &none
 &none   &none   &none   &none   &none   &none     &kp LA(LG(LEFT))    &kp LA(LG(C))  &kp LA(LG(F))     &kp LA(LG(RIGHT))  &none    &none
-                        &none   &trans  &trans    &trans              &trans         &none
+                        &none   &none   &trans    &trans              &none          &none
             >;
 
             label = "F-Layer";
