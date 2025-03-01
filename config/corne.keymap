@@ -43,53 +43,66 @@
         f_layer_left {
             bindings = <&mo 4>;
             key-positions = <36 37>;
+            timeout-ms = <60>;
         };
 
         f_layer_right {
             bindings = <&mo 4>;
             key-positions = <40 41>;
+            timeout-ms = <60>;
         };
 
         shift_left {
             bindings = <&kp LEFT_SHIFT>;
             key-positions = <15 27>;
             layers = <0>;
+            timeout-ms = <60>;
         };
 
         gui_left {
             bindings = <&kp LGUI>;
             key-positions = <16 28>;
+            timeout-ms = <60>;
         };
 
         opt_alt_left {
             bindings = <&kp LEFT_ALT>;
             key-positions = <14 26>;
+            timeout-ms = <60>;
         };
 
         ctrl_left {
             bindings = <&kp LCTRL>;
             key-positions = <13 25>;
+            timeout-ms = <60>;
         };
 
         shift_right {
             bindings = <&kp LEFT_SHIFT>;
             key-positions = <20 32>;
             layers = <0>;
+            timeout-ms = <60>;
         };
 
         gui_right {
             bindings = <&kp LGUI>;
             key-positions = <19 31>;
+            timeout-ms = <60>;
+            layers = <0>;
         };
 
         opt_alt_right {
             bindings = <&kp RIGHT_ALT>;
             key-positions = <21 33>;
+            timeout-ms = <60>;
+            layers = <0>;
         };
 
         ctrl_right {
             bindings = <&kp RIGHT_CONTROL>;
             key-positions = <22 34>;
+            timeout-ms = <60>;
+            layers = <0>;
         };
 
         enter {
@@ -141,10 +154,10 @@
 
             display-name = "Lower";
             bindings = <
-&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &kp MINUS
-&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans     &trans  &kp EQUAL
-                        &trans  &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &trans          &kp UP_ARROW    &trans           &trans    &trans  &kp N7  &kp N8  &kp N9  &kp MINUS  &trans
+&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans    &trans  &kp N4  &kp N5  &kp N6  &kp EQUAL  &trans
+&trans  &trans  &trans          &trans          &trans           &trans    &trans  &kp N1  &kp N2  &kp N3  &kp N0     &trans
+                                &trans          &trans           &trans    &trans  &trans  &trans
             >;
         };
 
@@ -171,10 +184,10 @@
 
         F_layer {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6    &kp F7              &kp F8         &kp F9            &kp F10            &kp F11  &kp F12
-&none   &none   &none   &none   &none   &none     &kp RC(LEFT_ARROW)  &kp RC(DOWN)   &kp RC(UP_ARROW)  &kp RC(RIGHT)      &none    &none
-&none   &none   &none   &none   &none   &none     &kp LA(LG(LEFT))    &kp LA(LG(C))  &kp LA(LG(F))     &kp LA(LG(RIGHT))  &none    &none
-                        &none   &none   &trans    &trans              &none          &none
+&trans  &kp F7  &kp F8  &kp F9  &kp F10  &trans    &trans              &trans         &trans            &trans             &trans  &trans
+&none   &kp F4  &kp F5  &kp F6  &kp F11  &none     &kp RC(LEFT_ARROW)  &kp RC(DOWN)   &kp RC(UP_ARROW)  &kp RC(RIGHT)      &none   &none
+&none   &kp F1  &kp F2  &kp F3  &kp F12  &none     &kp LA(LG(LEFT))    &kp LA(LG(C))  &kp LA(LG(F))     &kp LA(LG(RIGHT))  &none   &none
+                        &none   &none    &trans    &trans              &none          &none
             >;
 
             label = "F-Layer";
