@@ -35,11 +35,6 @@
             key-positions = <25 26>;
         };
 
-        del {
-            bindings = <&kp DEL>;
-            key-positions = <8 9>;
-        };
-
         f_layer_left {
             bindings = <&mo 4>;
             key-positions = <36 37>;
@@ -119,14 +114,13 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
-            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         mod_dance: mod_dance {
             compatible = "zmk,behavior-tap-dance";
             label = "MOD_DANCE";
             #binding-cells = <0>;
-            bindings = <&kp LGUI>, <&kp LCTRL>;
+            bindings = <&sk LGUI>, <&sk LCTRL>;
 
             tapping-term-ms = <500>;
         };
@@ -138,10 +132,10 @@
         MacOS {
             display-name = "MACOS";
             bindings = <
-&bspc_del         &kp Q  &kp W  &kp E      &kp R       &kp T        &kp Y      &kp U          &kp I      &kp O    &kp P     &bspc_del
-&kp LEFT_CONTROL  &kp A  &kp S  &kp D      &kp F       &kp G        &kp H      &kp J          &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LEFT_SHIFT    &kp Z  &kp X  &kp C      &kp V       &kp B        &kp N      &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp NON_US_HASH
-                                &lt 1 TAB  &mod_dance  &kp SPACE    &kp ENTER  &kp RIGHT_ALT  &lt 2 ESC
+&kp TAB         &kp Q  &kp W  &kp E      &kp R       &kp T        &kp Y      &kp U          &kp I      &kp O    &kp P     &bspc_del
+&bspc_del       &kp A  &kp S  &kp D      &kp F       &kp G        &kp H      &kp J          &kp K      &kp L    &kp SEMI  &kp SQT
+&sk LEFT_SHIFT  &kp Z  &kp X  &kp C      &kp V       &kp B        &kp N      &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp NON_US_HASH
+                              &lt 1 TAB  &mod_dance  &kp SPACE    &kp ENTER  &sk RIGHT_ALT  &lt 2 ESC
             >;
         };
 
