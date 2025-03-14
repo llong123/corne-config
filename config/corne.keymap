@@ -193,7 +193,7 @@
             label = "Tri_Layer";
         };
 
-        F-layer {
+        F_layer {
             bindings = <
 &trans  &trans  &kp F7  &kp F8  &kp F9  &kp F10    &trans  &trans  &trans  &trans  &trans  &trans
 &none   &trans  &kp F4  &kp F5  &kp F6  &kp F11    &none   &none   &none   &none   &none   &none
@@ -201,7 +201,7 @@
                         &none   &none   &trans     &trans  &none   &none
             >;
 
-            label = "F-Layer";
+            label = "F_Layer";
         };
 
         MAC_winManagement {
@@ -214,7 +214,7 @@
             >;
         };
 
-        empty-reserve {
+        empty_reserve {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
