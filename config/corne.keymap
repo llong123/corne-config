@@ -39,6 +39,48 @@
             bindings = <&kp ENTER>;
             key-positions = <19 20 21>;
         };
+
+        mac_left-parenthese {
+            bindings = <&kp LS(N8)>;
+            key-positions = <8 7>;
+            timeout-ms = <200>;
+            layers = <0>;
+        };
+
+        mac_right-parenthese {
+            bindings = <&kp LS(N9)>;
+            key-positions = <8 9>;
+            timeout-ms = <200>;
+            layers = <0>;
+        };
+
+        mac_left-sqr-bracket {
+            bindings = <&kp RA(N8)>;
+            key-positions = <19 20>;
+            timeout-ms = <200>;
+            layers = <0>;
+        };
+
+        mac_right-sqr-bracket {
+            bindings = <&kp RA(N9)>;
+            key-positions = <20 21>;
+            timeout-ms = <200>;
+            layers = <0>;
+        };
+
+        mac_left-bracket {
+            bindings = <&kp LS(RA(N8))>;
+            key-positions = <32 31>;
+            timeout-ms = <200>;
+            layers = <0>;
+        };
+
+        mac_right-bracket {
+            bindings = <&kp LS(RA(N9))>;
+            key-positions = <32 33>;
+            timeout-ms = <200>;
+            layers = <0>;
+        };
     };
 
     behaviors {
