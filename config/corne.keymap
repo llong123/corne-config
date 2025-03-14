@@ -46,49 +46,49 @@
             key-positions = <19 20 21>;
         };
 
-        mac_left-parenthese {
+        mac_left_parenthese {
             bindings = <&kp LS(N8)>;
             key-positions = <8 7>;
             timeout-ms = <200>;
             layers = <0>;
         };
 
-        mac_right-parenthese {
+        mac_right_parenthese {
             bindings = <&kp LS(N9)>;
             key-positions = <8 9>;
             timeout-ms = <200>;
             layers = <0>;
         };
 
-        mac_left-sqr-bracket {
+        mac_left_sqr_bracket {
             bindings = <&kp RA(N8)>;
             key-positions = <19 20>;
             timeout-ms = <200>;
             layers = <0>;
         };
 
-        mac_right-sqr-bracket {
+        mac_right_sqr_bracket {
             bindings = <&kp RA(N9)>;
             key-positions = <20 21>;
             timeout-ms = <200>;
             layers = <0>;
         };
 
-        mac_left-bracket {
+        mac_left_bracket {
             bindings = <&kp LS(RA(N8))>;
             key-positions = <32 31>;
             timeout-ms = <200>;
             layers = <0>;
         };
 
-        mac_right-bracket {
+        mac_right_bracket {
             bindings = <&kp LS(RA(N9))>;
             key-positions = <32 33>;
             timeout-ms = <200>;
             layers = <0>;
         };
 
-        fn_layer {
+        f_layer {
             bindings = <&mo 4>;
             key-positions = <40 41>;
             timeout-ms = <200>;
@@ -101,14 +101,14 @@
             timeout-ms = <200>;
         };
 
-        mac_right-angle-bracket {
+        mac_right_angle_bracket {
             bindings = <&kp LS(RA(N9))>;
             key-positions = <21 22>;
             timeout-ms = <200>;
             layers = <0>;
         };
 
-        mac_left-angle-bracket {
+        mac_left_angle_bracket {
             bindings = <&kp LS(RA(N9))>;
             key-positions = <9 10>;
             timeout-ms = <200>;
