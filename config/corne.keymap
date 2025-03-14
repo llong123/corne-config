@@ -17,22 +17,28 @@
             bindings = <&kp RG(C)>;
             key-positions = <26 27>;
             layers = <0>;
+            timeout-ms = <200>;
         };
 
         paste_mac {
             bindings = <&kp LG(V)>;
             key-positions = <28 27>;
             layers = <0>;
+            timeout-ms = <200>;
         };
 
         cut_mac {
             bindings = <&kp LG(X)>;
             key-positions = <26 28>;
+            timeout-ms = <200>;
+            layers = <0>;
         };
 
         undo_mac {
             bindings = <&kp LG(Z)>;
             key-positions = <25 26>;
+            layers = <0>;
+            timeout-ms = <200>;
         };
 
         enter {
@@ -78,6 +84,40 @@
         mac_right-bracket {
             bindings = <&kp LS(RA(N9))>;
             key-positions = <32 33>;
+            timeout-ms = <200>;
+            layers = <0>;
+        };
+
+        fn_layer {
+            bindings = <&mo 4>;
+            key-positions = <40 41>;
+            timeout-ms = <200>;
+        };
+
+        winManagement_layer {
+            bindings = <&mo 5>;
+            key-positions = <36 37>;
+            layers = <0>;
+            timeout-ms = <200>;
+        };
+
+        mac_right-angle-bracket {
+            bindings = <&kp LS(RA(N9))>;
+            key-positions = <21 22>;
+            timeout-ms = <200>;
+            layers = <0>;
+        };
+
+        mac_left-angle-bracket {
+            bindings = <&kp LS(RA(N9))>;
+            key-positions = <9 10>;
+            timeout-ms = <200>;
+            layers = <0>;
+        };
+
+        semicolon {
+            bindings = <&kp LS(PERIOD)>;
+            key-positions = <34 33>;
             timeout-ms = <200>;
             layers = <0>;
         };
@@ -153,15 +193,52 @@
             label = "Tri_Layer";
         };
 
-        F_layer {
+        F-layer {
             bindings = <
-&trans  &trans  &kp F7  &kp F8  &kp F9  &kp F10    &trans              &trans         &trans            &trans             &trans  &trans
-&none   &trans  &kp F4  &kp F5  &kp F6  &kp F11    &kp RC(LEFT_ARROW)  &kp RC(DOWN)   &kp RC(UP_ARROW)  &kp RC(RIGHT)      &none   &none
-&none   &trans  &kp F1  &kp F2  &kp F3  &kp F12    &kp LA(LG(LEFT))    &kp LA(LG(C))  &kp LA(LG(F))     &kp LA(LG(RIGHT))  &none   &none
-                        &none   &none   &trans     &trans              &none          &none
+&trans  &trans  &kp F7  &kp F8  &kp F9  &kp F10    &trans  &trans  &trans  &trans  &trans  &trans
+&none   &trans  &kp F4  &kp F5  &kp F6  &kp F11    &none   &none   &none   &none   &none   &none
+&none   &trans  &kp F1  &kp F2  &kp F3  &kp F12    &none   &none   &none   &none   &none   &none
+                        &none   &none   &trans     &trans  &none   &none
             >;
 
             label = "F-Layer";
+        };
+
+        MAC_winManagement {
+            label = "Mac_winManagement";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans              &trans         &trans            &trans             &trans  &trans
+&none   &trans  &trans  &trans  &trans  &trans    &kp RC(LEFT_ARROW)  &kp RC(DOWN)   &kp RC(UP_ARROW)  &kp RC(RIGHT)      &none   &none
+&none   &trans  &trans  &trans  &trans  &trans    &kp LA(LG(LEFT))    &kp LA(LG(C))  &kp LA(LG(F))     &kp LA(LG(RIGHT))  &none   &none
+                        &none   &none   &trans    &trans              &none          &none
+            >;
+        };
+
+        empty-reserve {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        layer_7 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        layer_8 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
         };
     };
 
@@ -171,6 +248,21 @@
         tri_layer {
             if-layers = <1 2>;
             then-layer = <3>;
+        };
+
+        Reserved_layer {
+            if-layers = <4 5>;
+            then-layer = <6>;
+        };
+
+        Layer7 {
+            if-layers = <5 2>;
+            then-layer = <7>;
+        };
+
+        Layer8 {
+            if-layers = <4 1>;
+            then-layer = <8>;
         };
     };
 };
