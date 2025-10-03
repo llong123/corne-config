@@ -144,9 +144,9 @@
             tapping-term-ms = <500>;
         };
 
-        soft_off: soft_off {
+        manual_shutoff: manual_shutoff {
             compatible = "zmk,behavior-soft-off";
-            label = "SOFT_OFF";
+            label = "MANUAL_SHUTOFF";
             #binding-cells = <0>;
             hold-time-ms = <500>;
         };
@@ -243,10 +243,10 @@
 
         layer_8 {
             bindings = <
-&soft_off  &none  &none  &none   &none  &none    &none  &none   &none   &none  &none  &none
-&none      &none  &none  &none   &none  &none    &none  &none   &none   &none  &none  &none
-&none      &none  &none  &none   &none  &none    &none  &none   &none   &none  &none  &none
-                         &trans  &none  &none    &none  &trans  &trans
+&manual_shutoff  &none  &none  &none   &none  &none    &none  &none   &none   &none  &none  &none
+&none            &none  &none  &none   &none  &none    &none  &none   &none   &none  &none  &none
+&none            &none  &none  &none   &none  &none    &none  &none   &none   &none  &none  &none
+                               &trans  &none  &none    &none  &trans  &trans
             >;
         };
     };
