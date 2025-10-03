@@ -142,6 +142,13 @@
 
             tapping-term-ms = <500>;
         };
+
+        soft_off: soft_off {
+            compatible = "zmk,behavior-soft-off";
+            label = "SOFT_OFF";
+            #binding-cells = <0>;
+            hold-time-ms = <500>;
+        };
     };
 
     keymap {
@@ -208,10 +215,10 @@
         MAC_winManagement {
             label = "Mac_winManagement";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans              &trans         &trans            &trans             &trans  &trans
-&none   &trans  &trans  &trans  &trans  &trans    &kp RC(LEFT_ARROW)  &kp RC(DOWN)   &kp RC(UP_ARROW)  &kp RC(RIGHT)      &none   &none
-&none   &trans  &trans  &trans  &trans  &trans    &kp LA(LG(LEFT))    &kp LA(LG(C))  &kp LA(LG(F))     &kp LA(LG(RIGHT))  &none   &none
-                        &none   &none   &trans    &trans              &none          &none
+&none  &none  &none  &none  &none  &none    &none               &none          &none             &none              &none  &none
+&none  &none  &none  &none  &none  &none    &kp RC(LEFT_ARROW)  &kp RC(DOWN)   &kp RC(UP_ARROW)  &kp RC(RIGHT)      &none  &none
+&none  &none  &none  &none  &none  &none    &kp LA(LG(LEFT))    &kp LA(LG(C))  &kp LA(LG(F))     &kp LA(LG(RIGHT))  &none  &none
+                     &none  &none  &none    &none               &none          &none
             >;
         };
 
