@@ -174,29 +174,29 @@
 
             display-name = "Lower";
             bindings = <
-&none  &none  &none           &kp UP_ARROW    &none            &none    &kp PAGE_UP    &kp N7  &kp N8  &kp N9  &kp LS(MINUS)  &none
-&none  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none    &kp PAGE_DOWN  &kp N4  &kp N5  &kp N6  &kp LS(N0)     &none
-&none  &none  &none           &none           &none            &none    &none          &kp N1  &kp N2  &kp N3  &kp N0         &none
-                              &trans          &none            &none    &none          &none   &none
+&trans  &trans  &trans          &kp UP_ARROW    &trans           &trans    &kp PAGE_UP    &kp N7  &kp N8  &kp N9  &kp LS(MINUS)  &trans
+&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans    &kp PAGE_DOWN  &kp N4  &kp N5  &kp N6  &kp LS(N0)     &trans
+&trans  &trans  &trans          &trans          &trans           &trans    &trans         &kp N1  &kp N2  &kp N3  &kp N0         &trans
+                                &trans          &trans           &trans    &trans         &trans  &trans
             >;
         };
 
         raise_macOS {
             display-name = "Raise MacOS";
             bindings = <
-&none  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)    &kp LS(NUMBER_6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)        &none
-&none  &none             &kp RA(NUMBER_2)  &kp RA(NUMBER_3)  &kp RA(NUMBER_4)  &kp RA(N5)    &kp GRAVE         &kp RA(N7)  &kp RA(N8)  &kp RA(N9)  &kp RA(NUMBER_0)  &none
-&none  &none             &none             &none             &none             &none         &none             &none       &none       &none       &none             &none
-                                           &none             &none             &none         &none             &none       &trans
+&trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)    &kp LS(NUMBER_6)  &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(N0)        &trans
+&trans  &trans            &kp RA(NUMBER_2)  &kp RA(NUMBER_3)  &kp RA(NUMBER_4)  &kp RA(N5)    &kp GRAVE         &kp RA(N7)  &kp RA(N8)  &kp RA(N9)  &kp RA(NUMBER_0)  &trans
+&trans  &trans            &trans            &trans            &trans            &trans        &trans            &trans      &trans      &trans      &trans            &trans
+                                            &trans            &trans            &trans        &trans            &trans      &trans
             >;
         };
 
         tri_layer {
             bindings = <
-&bootloader     &none  &none  &out OUT_TOG  &none  &bt BT_SEL 0    &bt BT_SEL 3  &none  &kp C_VOLUME_UP    &none  &none  &bootloader
-&none           &none  &none  &none         &none  &bt BT_SEL 1    &bt BT_SEL 4  &none  &kp C_VOLUME_DOWN  &none  &none  &none
-&studio_unlock  &none  &none  &kp RG(L)     &none  &bt BT_SEL 2    &bt BT_CLR    &none  &kp K_MUTE         &none  &none  &none
-                              &trans        &none  &none           &none         &none  &trans
+&bootloader     &trans  &trans  &out OUT_TOG  &trans  &bt BT_SEL 0    &bt BT_SEL 3  &trans  &kp C_VOLUME_UP    &trans  &trans  &bootloader
+&trans          &trans  &trans  &trans        &trans  &bt BT_SEL 1    &bt BT_SEL 4  &trans  &kp C_VOLUME_DOWN  &trans  &trans  &trans
+&studio_unlock  &trans  &trans  &kp RG(L)     &trans  &bt BT_SEL 2    &bt BT_CLR    &trans  &kp K_MUTE         &trans  &trans  &trans
+                                &trans        &trans  &trans          &trans        &trans  &trans
             >;
 
             label = "Tri_Layer";
@@ -204,10 +204,10 @@
 
         F_layer {
             bindings = <
-&none  &none  &kp F7  &kp F8  &kp F9  &kp F10    &none  &none   &none   &none  &none  &none
-&none  &none  &kp F4  &kp F5  &kp F6  &kp F11    &none  &none   &none   &none  &none  &none
-&none  &none  &kp F1  &kp F2  &kp F3  &kp F12    &none  &none   &none   &none  &none  &none
-                      &none   &none   &none      &none  &trans  &trans
+&trans  &trans  &kp F7  &kp F8  &kp F9  &kp F10    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp F1  &kp F2  &kp F3  &kp F12    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans     &trans  &trans  &trans
             >;
 
             label = "F_Layer";
@@ -216,37 +216,37 @@
         MAC_winManagement {
             label = "Mac_winManagement";
             bindings = <
-&manual_shutoff  &none  &none  &none   &none   &none    &mkp MB1      &none           &mmv MOVE_UP      &none            &none  &msc SCRL_UP
-&none            &none  &none  &none   &none   &none    &mkp MB2      &mmv MOVE_LEFT  &mmv MOVE_DOWN    &mmv MOVE_RIGHT  &none  &msc SCRL_DOWN
-&none            &none  &none  &none   &none   &none    &kp RG(LEFT)  &kp RG(DOWN)    &kp RG(UP_ARROW)  &kp RG(RIGHT)    &none  &none
-                               &trans  &trans  &none    &none         &none           &none
+&manual_shutoff  &trans  &trans  &trans  &trans  &trans    &mkp MB1      &trans          &mmv MOVE_UP      &trans           &trans  &msc SCRL_UP
+&trans           &trans  &trans  &trans  &trans  &trans    &mkp MB2      &mmv MOVE_LEFT  &mmv MOVE_DOWN    &mmv MOVE_RIGHT  &trans  &msc SCRL_DOWN
+&trans           &trans  &trans  &trans  &trans  &trans    &kp RG(LEFT)  &kp RG(DOWN)    &kp RG(UP_ARROW)  &kp RG(RIGHT)    &trans  &trans
+                                 &trans  &trans  &trans    &trans        &trans          &trans
             >;
         };
 
         empty_reserve {
             bindings = <
-&none  &none  &none  &none   &none   &none    &none  &none   &none   &none  &none  &none
-&none  &none  &none  &none   &none   &none    &none  &none   &none   &none  &none  &none
-&none  &none  &none  &none   &none   &none    &none  &none   &none   &none  &none  &none
-                     &trans  &trans  &none    &none  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
         layer_7 {
             bindings = <
-&none  &none  &none  &none   &none   &none    &none  &none  &none   &none  &none  &none
-&none  &none  &none  &none   &none   &none    &none  &none  &none   &none  &none  &none
-&none  &none  &none  &none   &none   &none    &none  &none  &none   &none  &none  &none
-                     &trans  &trans  &none    &none  &none  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
         layer_8 {
             bindings = <
-&manual_shutoff  &none  &none  &none   &none  &none    &none  &none   &none   &none  &none  &none
-&none            &none  &none  &none   &none  &none    &none  &none   &none   &none  &none  &none
-&none            &none  &none  &none   &none  &none    &none  &none   &none   &none  &none  &none
-                               &trans  &none  &none    &none  &trans  &trans
+&manual_shutoff  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans           &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans           &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                 &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
